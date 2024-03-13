@@ -1,0 +1,7 @@
+name: UCB Child Taxonomy
+type: module
+description: 'Handles automatic selection of child taxonomy terms.'
+core_version_requirement:  ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:taxonomy

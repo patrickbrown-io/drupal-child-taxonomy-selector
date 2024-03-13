@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_form_FORM_ID_alter() for node_ucb_article_list_form.
+ */
+/**
+ * Implements hook_form_FORM_ID_alter() for your specific form.
+ */
+
+//  May be a way to make this more generic, test if form has a field thats an Entity reference for a taxonomy and attach the JS? 
+function ucb_child_taxonomy_form_node_ucb_article_list_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Attach the custom JavaScript library.
+  $form['#attached']['library'][] = 'ucb_child_taxonomy/ucb-child-taxonomy-js';
+}
+

@@ -1,0 +1,8 @@
+ucb-child-taxonomy-js:
+  version: 1.x
+  js:
+    js/ucb_child_taxonomy.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
